@@ -1,5 +1,6 @@
 import React from 'react';
 import { UsersIcon, DocumentTextIcon, NewspaperIcon, BanknotesIcon } from '@heroicons/react/24/solid';
+import UserInsightsChart from '../components/dashboard/UserInsightsChart';
 
 function Dashboard() {
   const stats = [
@@ -125,6 +126,11 @@ function Dashboard() {
               </div>
             );
           })}
+        </div>
+
+        {/* User Insights Chart */}
+        <div className="mt-6">
+          <UserInsightsChart />
         </div>
       </div>
     </div>
